@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.taaffe.restManager.SonosRestResponse;
+
 @RestController
 @CrossOrigin(origins = { "http://taaffe.duckdns.org:5005", "http://taaffe.duckdns.org" })
 public class sonosAPIController {
