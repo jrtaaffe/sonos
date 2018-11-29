@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 @CrossOrigin(origins = { "http://taaffe.duckdns.org:5005", "http://taaffe.duckdns.org" })
 public class sonosAPIController {
 
-	@GetMapping("sonosApi/{tripScheduleId}")
+	@GetMapping("sonosApi/{sonosApiCommand}")
 	private String sendSonosCommand(@PathVariable String sonosCommand) {
 		RestTemplate restTemplate = new RestTemplate();
 		SonosRestResponse commandResponse = restTemplate.getForObject("http://taaffe.duckdns.org:5005/" + sonosCommand, SonosRestResponse.class);
